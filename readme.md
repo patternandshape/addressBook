@@ -1,6 +1,6 @@
 # Address Book
 
-#### An application that builds an address book to store information about various contacts that the user has made.  
+#### This application builds an address book to store information about various contacts that the user has made.  
 #### January 24, 2016
 
 #### By Molly Curtin
