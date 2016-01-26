@@ -8,11 +8,16 @@ Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
 
+
 function Address(street, city, state, zip) {
   this.street = street;
   this.city = city;
   this.state = state;
   this.zip = zip;
+}
+
+Address.prototype.fullAddress = function() {
+  return this.street + ", " + this.city + ", " + this.state + ", " + this.zip;
 }
 
 $(document).ready(function() {
