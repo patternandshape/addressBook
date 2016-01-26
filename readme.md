@@ -1,9 +1,9 @@
 # Address Book
 
 #### This application builds an address book to store information about various contacts that the user has made.  
-#### January 24, 2016
+#### January 26, 2016
 
-#### By Molly Curtin
+#### By Molly Curtin and Jared Beckler
 
 ## Description
 
@@ -28,4 +28,4 @@ A web application that takes a contact information from a user and returns an ad
 
 *Licensed under GPL.*
 
-&copy;2016 **Molly Curtin**
+&copy;2016 **Molly Curtin and Jared Beckler**
