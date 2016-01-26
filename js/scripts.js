@@ -23,7 +23,7 @@ Address.prototype.fullAddress = function() {
 function resetFields() {
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
-    $("input.new-address-type").val("");
+    $("select.new-address-type").val("");
     $("input.new-street").val("");
     $("input.new-city").val("");
     $("input.new-state").val("");
@@ -67,12 +67,12 @@ $(document).ready(function() {
     var newContact = new Contact(inputtedFirstName, inputtedLastName);
 
     $(".new-address").each(function() {
-      var inputtedAddressType = $(this).find("input.new-address-type").val();
+      var selectedAddressType = $(this).find("select.new-address-type").val();
       var inputtedStreet = $(this).find("input.new-street").val();
       var inputtedCity = $(this).find("input.new-city").val();
       var inputtedState = $(this).find("input.new-state").val();
       var inputtedZip = $(this).find("input.new-zip").val();
-      var newAddress = new Address(inputtedAddressType, inputtedStreet, inputtedCity, inputtedState, inputtedZip)
+      var newAddress = new Address(selectedAddressType, inputtedStreet, inputtedCity, inputtedState, inputtedZip)
       newContact.addresses.push(newAddress)
     });
 
