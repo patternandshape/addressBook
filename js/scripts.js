@@ -80,6 +80,10 @@ $(document).ready(function() {
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
+    $("ul#contacts").hover(function(){
+      $(this).css("background-color", "#ffcc66");
+    })
+
     $(".contact").last().click(function() {
       $("#show-contact").fadeIn("slow");
       $("#show-contact h2").text(newContact.fullName());
