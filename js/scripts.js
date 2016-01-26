@@ -21,6 +21,8 @@ Address.prototype.fullAddress = function() {
 }
 
 function resetFields() {
+
+  //write a loop through a array that contains these class/id names [".new-state"]
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
     $("select.new-address-type").val("");
@@ -73,7 +75,9 @@ $(document).ready(function() {
       var inputtedState = $(this).find("input.new-state").val();
       var inputtedZip = $(this).find("input.new-zip").val();
       var newAddress = new Address(selectedAddressType, inputtedStreet, inputtedCity, inputtedState, inputtedZip)
+
       newContact.addresses.push(newAddress)
+
     });
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
@@ -87,6 +91,8 @@ $(document).ready(function() {
       newContact.addresses.forEach(function(address) {
         $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
       });
+      $("li").not(":odd").css("color", "#007fff");
+      $("li").not(":even").css("color", "#66cc66");
     });
 
     resetFields();

@@ -10,3 +10,11 @@
 .contact:hover {
   text-decoration: underline;
 }
+
+#addresses {
+  list-style-type: none;
+}
+
+#add-address {
+  background-color: #e5f7ff;
+}
