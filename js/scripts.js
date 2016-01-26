@@ -21,8 +21,6 @@ Address.prototype.fullAddress = function() {
 }
 
 function resetFields() {
-
-  //write a loop through a array that contains these class/id names [".new-state"]
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
     $("select.new-address-type").val("");
@@ -83,7 +81,7 @@ $(document).ready(function() {
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
     $(".contact").last().click(function() {
-      $("#show-contact").show();
+      $("#show-contact").fadeIn("slow");
       $("#show-contact h2").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
