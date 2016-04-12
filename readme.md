@@ -1,31 +1,26 @@
 # Address Book
 
-#### This application builds an address book to store information about various contacts that the user has made.  
-#### January 26, 2016
+January 26, 2016
 
-#### By Molly Curtin and Jared Beckler
+##### By Molly Curtin &amp; Jared Beckler
 
-## Description
+### Description
 
 A web application that takes a contact information from a user and returns an address book of all of their contacts' information.
 
-## Technologies Used
+##### Technologies Used
 
 * HTML
 * CSS
 * JavaScript
-* JQuery
-* Atom
-* Terminal
-* Chai
+* jQuery
 * Mocha
-* Bootstrap
+* Chai
 * BDD
+* Git
 
-###Address Book can be viewed at https://github.com/patternandshape/addressBook
+##### License
 
-### License
+*This software is licensed under the MIT license.*
 
-*Licensed under GPL.*
-
-&copy;2016 **Molly Curtin and Jared Beckler**
+&copy;2016 **Molly Curtin &amp; Jared Beckler**
